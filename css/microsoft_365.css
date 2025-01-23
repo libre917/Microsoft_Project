@@ -1,0 +1,419 @@
+@import url('root_colors.css');
+@import url('general.css');
+section{
+    width: 100vw;
+}
+button{
+    background-color: var(--microsoft_365_blue);
+    color: white;
+    border: 2px solid var(--microsoft_365_blue);
+    border-radius: 15px !important;
+    transition: 500ms;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 500ms;
+}
+button:active{
+background-color: white ;
+color: var(--microsoft_365_blue);
+}
+h1, h2{
+    font-weight: 600 !important;
+}
+.news-card, .news-card-minor{
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.608);
+}
+.news-card-img, .news-card-minor-img{
+    background-color: transparent;
+    box-shadow: 0px 1px 4px rgba(82, 82, 82, 0.699);
+}
+/*----------------------------------------*/
+.section_1{
+    background: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/hero-background-for-home-370213?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=680&qlt=100&fit=constrain") no-repeat;
+    background-size: cover;
+    height: 560px;
+    padding: 0px;
+    margin: 0px;
+    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.descricao{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    width:950px;
+    padding-bottom: 60px;
+}
+.descricao p{
+    width: 600px;
+}
+.descricao p, .descricao button{
+    justify-self: center
+}
+.descricao button{
+    height: 60px;
+    width:250px;
+}
+.group{
+    width: 950px;
+    text-align: center;
+    height: 100px;
+    align-items: center;
+}
+.group-list{
+    height:114px;
+margin-bottom: 0px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 1px;
+    display: flex;
+    list-style:none;
+    align-items: center;
+}
+.group-list-item{
+    max-height: 98px;
+    width:300px;
+    text-align: left;
+    font-weight: 500;
+    padding:30px 20px !important;
+    border-radius: 50px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.group-list-item.active{
+    background-color: var(--microsoft_365_blue);
+    color: white;
+    border-radius: 50px;
+}
+.group-list-item:not(.active):hover{
+    text-decoration: underline;
+
+}
+/*----------------------------------------*/
+.section_2{
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+}
+.section_2-content{
+    height: 1090px;
+}
+.section_2-nav-buttons{
+    width: 100%;
+    height: 50px;
+    background-color: var(--white);
+    display: flex;
+}
+.section_2-nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.nav-button{
+    padding: 
+    0px 10px;
+    color:black;
+    font-weight: 500;
+    border: none;
+    border-radius: 0px !important;
+    background-color: transparent;
+    height: 50px;
+    border-bottom: 3px solid var(--white);
+;
+}
+.nav-button.active{
+    border-color:var(--dark-blue) ;
+}
+.section_2-content{
+    background-image: linear-gradient(white, #caedff,#e5c4f1,#ffedba,white) ;
+    display: grid;
+    justify-content: center;
+    padding-top: 40px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+}
+/*configurações do 'como funciona'*/
+.first-content{
+    display: flex;
+}
+/* Remove as bordas do botão ativo */
+.accordion-button.active {
+    box-shadow: none !important;
+}
+.accordion{
+    border: none !important;
+    max-width: 1200px;
+}
+.accordion-item{
+    border: none !important;
+    width: 1200px;
+}
+.accordion-header.active{
+    border:none !important;
+}
+.accordion-button{
+    box-shadow: 0px 1px 2px rgba(128, 128, 128, 0.216)!important;
+    border: none !important;
+    padding: 
+    0px 10px;
+    color:black;
+    font-weight: 500;
+    border: none;
+    border-radius: 0px !important;
+    background-color: transparent !important;
+    height: 50px;
+    border-left: 3px solid transparent !important;
+    
+}
+.accordion-button.active{
+    background-color: white !important;
+    box-shadow: 0px 5px 7px rgba(128, 128, 128, 0.699) !important;
+    border: none;
+ border-left:5px solid var(--dark-blue) !important;   
+ opacity: 1 !important;
+ border-bottom: 1px solid !important;
+
+}
+.accordion-button.collapsed{
+    box-shadow: 0px 1px 2px rgba(128, 128, 128, 0.216)!important;
+    border: none !important;
+    padding: 
+    0px 10px;
+    color:black;
+    font-weight: 500;
+    border: none;
+    border-radius: 0px !important;
+    background-color: #ffffffa6 !important;
+    height: 50px;
+    border-left: 3px solid var(--dark-blue) !important;
+}
+.accordion-item{
+    color:black;
+    font-weight: 500;
+    border: none;
+    border-radius: 0px !important;
+    background-color: transparent !important; 
+}
+.accordion-body{
+    background-color: rgba(255, 255, 255, 0.404) !important;
+    box-shadow: 0px 0px 2px rgba(128, 128, 128, 0.699);
+    max-width: 1200px;
+}
+.accordion-text{
+    font-weight: 350 !important;
+    display: grid;
+    align-items: center;
+    text-align: left;
+    width: 400px;
+    height:200px;
+    margin: 20px;
+    padding: 10px 10px;
+    border-top: 1px solid black ;
+    border-bottom: 1px solid black ;
+}
+.accordion-content {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    
+}
+.accordion-content.active{
+    display: flex;
+    padding: 0px 30px;
+    border-bottom: 1px solid black;
+}
+/*configuração do 'noticias em destaque'*/
+.second-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+}
+.news-card{
+    margin-bottom: 30px;
+    box-shadow:0px 1px 3px rgba(255, 255, 255, 0.404) ;
+    border-radius: 0px 24px 24px 0px;
+    background-image:linear-gradient(to left, white, #ffffff45);
+    width: 1200px;
+    display: flex;
+}
+.news-card-text{
+    width: 600px;
+    padding: 20px;
+    display: grid;
+    justify-items: left;
+}
+.news-card-text-subtitle{
+    font-weight: 300;
+    justify-self: top;
+}
+.news-card-text-protagonist{
+    text-align: left;
+    align-self: center;
+}
+.news-card-text-buttons{
+    display: grid;
+    padding: 0% !important;
+    margin: 0 !important;
+    text-align: left;
+    align-items: end;
+}
+.news-card-text-buttons button{
+    font-weight: 400;
+    height:40px;
+    padding: 6px;
+}
+.news-card-img{
+    box-shadow: 0px 1px 3px;
+    border-radius: 24px;
+    text-align: right;
+    width: 50%;
+}
+.news-card-minor-container{
+    padding: 0px;
+display: flex !important      ;
+}
+.news-card-minor h2{
+    font-size: 24px;
+}
+.news-card-minor p{
+    font-size: 16px;
+}
+.news-card-minor{
+    margin: 15px;
+    box-shadow:0px 1px 3px rgba(255, 255, 255, 0.404) ;
+    border-radius: 24px 24px 0px 0px;
+    background-image:linear-gradient( white -10%, #ffffff45);
+    width:375px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.news-card-minor-img{
+    box-shadow: 0px 1px 3px;
+    border-radius: 24px;
+}
+.news-card-minor-text{
+    height: 100%;
+    padding:20px;
+    display: grid;
+    justify-items: left;
+}
+.news-card-minor-text-protagonist{
+    text-align: left;
+} .news-card-minor-text-buttons{
+    display: grid;
+    padding: 0% !important;
+    margin: 0 !important;
+    text-align: left;
+    align-items: end;
+}
+.news-card-minor-text-buttons button{
+    font-weight: 400;
+    height:40px;
+    padding: 6px;
+}
+/*configuração do 'o que está incluido'*/
+.appsContent{
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+    padding: 20px;
+}
+.appsTitle{
+    display: flex;
+    justify-content: center;
+}
+.appsContent-items{
+    display: grid;
+    width: 250px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+background-color: var(--white);
+box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.699);
+justify-content: center;
+align-content: center;
+margin:10px;
+transition: 500ms;
+}
+.appsTitle img{
+    padding: 5px;
+}
+.appsTitle h1{
+    margin-right: 10px;
+    padding: 5px;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+}
+.appsContent-items.active {
+    margin: 10px;
+    width: 565px;
+    border-radius: 24px;
+    height: 225px;
+}
+.appsItem-Text {
+    position: relative;
+    opacity: 0;
+    max-height: 0;
+    text-align: left;
+    overflow: hidden;
+    transition: opacity 2000ms, max-height 500ms;
+}
+.appsItem-Text p{
+    margin-top: 5px;
+    margin-right: -123px;
+    z-index: 10;
+}
+.appsItem-Text a{
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+}
+.appsItem-Text a:hover{
+    text-decoration: underline;
+}
+
+.appsItem-Text.active {
+    padding: 0px;
+    text-align: left;
+    opacity: 1;
+    max-height: 2000px; /* Defina um valor grande o suficiente para acomodar o conteúdo */
+}
+.container{
+    position: relative;
+    width: 950px !important;
+    height: 135px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.container img{
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+}
+.gradient{
+    position: absolute;
+    background-image: linear-gradient(to right, white,#ffffff70, transparent) ;
+
+    width: 100%;
+    height: 100%;
+}
+.apps-textButton{
+    display: grid;
+    justify-content: left;
+}

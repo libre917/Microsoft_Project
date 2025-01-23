@@ -1,0 +1,167 @@
+@import "root_colors.css";
+@import url('general.css');
+
+/*----------------------------------------*/
+.section_1 {
+  padding-bottom: 30%;
+  display: contents;
+  margin: 0;
+  width: 1920px;
+  height: 33vw;
+}
+
+/*cards dos carousels*/
+.descricao {
+  position: relative;
+  width: 450px;
+  height: 225px;
+  color: white;
+  text-align: center;
+  top: -380px;
+  left: 150px;
+}
+
+.descricao_content {
+  margin: 50px;
+  padding: 20px;
+  text-align: left;
+}
+
+.descricao_content a {
+  text-decoration: none;
+}
+
+.descricao h1 {
+  margin-bottom: 1.5rem;
+}
+
+.descricao_button, .button {
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  width: 230px;
+  height: 40px;
+  margin-top: 1.25rem;
+  background-color: var(--logo_blue);
+  border: 2px solid var(--logo_blue);
+  transition: 700ms ease;
+  cursor: pointer;
+}
+
+.descricao_button:hover, .button:hover {
+  background-color: white;
+  color: var(--logo_blue);
+  box-shadow: 0px 0px 15px var(--logo_blue);
+}
+
+.descricao_button:active, .button:active {
+  background-color: var(--logo_blue);
+  color: white;
+  box-shadow: 0px 0px 15px var(--logo_blue);
+}
+
+/* Configuração inicial - todos os conteúdos invisíveis */
+.carousel .carousel-item .descricao_content, 
+.carousel .carousel-item .descricao_content2 {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0s ease-in-out, visibility 0s ease-in-out;
+  position: absolute;
+  z-index: 10;
+}
+
+/* Quando o slide está ativo - conteúdo visível */
+.carousel .carousel-item.active .descricao_content, 
+.carousel .carousel-item.active .descricao_content2 {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out 0.3s, visibility 0s ease-in-out 0.3s;
+}
+
+/* Quando o slide está saindo - esconde o conteúdo imediatamente */
+.carousel .carousel-item.active.carousel-item-start .descricao_content, 
+.carousel .carousel-item.active.carousel-item-end .descricao_content,
+.carousel .carousel-item.active.carousel-item-start .descricao_content2, 
+.carousel .carousel-item.active.carousel-item-end .descricao_content2 {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0s ease-in-out, visibility 0s ease-in-out;
+}
+
+/*----------------------------------------*/
+.section_2 {
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+/* Afeta o content do section_4 */
+.contents {
+  text-align: left;
+  display: inline-table;
+  position: relative;
+  z-index: 3;
+  width: 350px;
+  height: 470px;
+  box-shadow: 0px 0px 2px rgba(128, 128, 128, 0.699);
+  padding: 20px;
+  margin: 10px;
+}
+
+.contents h1 {
+  color: #000;
+  font-size: 20px;
+}
+
+.contents img {
+  padding-bottom: 7%;
+  width: 100%;
+  height: 45%;
+}
+
+/*afeta os botôes do index.php*/
+.button {
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  height: 40px;
+  margin-top: 2.75rem;
+  margin-bottom: 1.25rem;
+}
+
+/*----------------------------------------*/
+.section_3 {
+  text-align: center;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.descricao_content2 {
+  font-size: 14px;
+  padding: 45px;
+  width: 350px;
+  height: 250px;
+  position: absolute;
+  z-index: 3;
+  margin-top: 60px;
+  top: auto;
+  left: 100px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.637);
+  box-shadow: 1px 1px 10px rgba(53, 53, 53, 0.418);
+}
+
+.descricao_content2 h2 {
+  padding-bottom: 6px;
+  font-weight: 500;
+  color: black;
+}
+
+/*----------------------------------------*/
+.section_4 {
+  text-align: center;
+  padding-top: 20px;
+  max-width: 1366px;
+  margin: auto;
+  padding-bottom: 50px;
+}
